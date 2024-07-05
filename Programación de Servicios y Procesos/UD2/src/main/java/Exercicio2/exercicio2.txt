@@ -1,0 +1,8 @@
+Obtén o resultado correcto?
+
+NON
+
+Qué difrencias aprecias na execución do programa?
+
+No programa sin sincronizar, cada vez que se executa o programa da un resultado diferente, que para nada ten que ver co resultado esperado.
+Pola contra, o programa sincronizado, sempre da como resultado o número 20000 agardado. 

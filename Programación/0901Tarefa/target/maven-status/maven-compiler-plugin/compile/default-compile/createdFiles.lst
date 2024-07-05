@@ -1,0 +1,7 @@
+com\mycompany\biblioteca\BookView$1.class
+com\mycompany\biblioteca\BookView.class
+com\mycompany\dao\ConnectionManager.class
+com\mycompany\biblioteca\AppBiblioteca.class
+com\mycompany\model\Book.class
+com\mycompany\dao\DAO.class
+com\mycompany\dao\BookDAO.class

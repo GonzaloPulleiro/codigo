@@ -1,0 +1,6 @@
+Que aprecias no resultado da execución?
+
+No programa barreira, certo que esperan a que cheguen todos os fíos á barreira para continuar coa execución, pero estes chegan de forma totalmente aleatoria e simultánea.
+Mentres, no programa barreira_sleep, os fíos van chegando de forma ordenada e pausada, esperando o seu número de fío en segundos. 
+
+A partires da barreira, a execución dos fíos é tamén aleatoria e simultánea, en ambos casos. 

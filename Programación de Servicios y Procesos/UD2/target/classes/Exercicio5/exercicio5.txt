@@ -1,0 +1,3 @@
+Que diferencias aprecias na execución do programa paralelo fronte ao secuencial?
+
+A diferenza máis clara é que no primeiro caso, o tempo de execución é 0 ms, mentres que no segundo, dito tempo, nos casos que o probei, xa oscila entre 1 e 2ms. 
