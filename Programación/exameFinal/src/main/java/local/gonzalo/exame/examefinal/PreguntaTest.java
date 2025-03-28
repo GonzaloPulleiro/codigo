@@ -7,6 +7,7 @@ import java.util.function.Predicate;
  *
  * @author dammdprog1
  */
+@SuppressWarnings("unused")
 public class PreguntaTest extends Pregunta implements Predicate<Integer>, Serializable {
 
     public static final int NUMERO_OPCIONES = 4;
@@ -31,8 +32,8 @@ public class PreguntaTest extends Pregunta implements Predicate<Integer>, Serial
         for (int i = 0; i < opciones.length; i++) {
             if (opciones[i] == null) {
                 opciones[i] = new Opcion(enunciado, correcta);
+                return true;
             }
-            return true;
         }
         return false;
     }

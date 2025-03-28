@@ -3,9 +3,8 @@ package local.gonzalo.exame.examefinal;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
-import java.time.Year;
 import java.util.ArrayList;
-import java.util.Comparator;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -18,7 +17,7 @@ public class Examen {
     private int idExamen, idPregunta, idOpcion, numero;
     private double puntos;
     private LocalDateTime fecha;
-    private List<String> preguntas;
+    private List<Pregunta> preguntas;
 
     public Examen() {
         this.descripcion = "Programación";
@@ -109,25 +108,24 @@ public class Examen {
         this.fecha = fecha;
     }
 
-    public List<String> getPreguntas() {
+    public List<Pregunta> getPreguntas() {
         return preguntas;
     }
 
-    public void setPreguntas(List<String> preguntas) {
+    public void setPreguntas(List<Pregunta> preguntas) {
         this.preguntas = preguntas;
     }
 
-    public void addPregunta(String pregunta) {
+    public void addPregunta(Pregunta pregunta) {
         preguntas.add(pregunta);
     }
 
-    public void removePregunta(String pregunta) {
+    public void removePregunta(Pregunta pregunta) {
         preguntas.remove(pregunta);
     }
 
     public void ordenar() {
-        Comparator<? super String> c = null;
-        preguntas.sort(c);
+       Collections.sort(preguntas);
     }
 
     @Override

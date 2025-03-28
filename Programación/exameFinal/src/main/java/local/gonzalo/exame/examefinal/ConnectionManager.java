@@ -1,9 +1,6 @@
 package local.gonzalo.exame.examefinal;
 
 import java.sql.*;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
 /**
  *
  * @author dammdprog1
@@ -11,8 +8,8 @@ import java.util.logging.Logger;
 public class ConnectionManager {
 
     private final String URL = "jdbc:sqlite:C:\\Users\\dammdprog1\\Desktop\\examenesTest.sqlite";
-    public ConnectionManager instance;
-    public Connection conexion;
+    private ConnectionManager instance;
+    private Connection conexion;
 
     ConnectionManager() {
     }

@@ -34,6 +34,8 @@ public class Opcion implements Serializable {
         if (enunciado != null && enunciado.length() > 20) {
             if (correcta == true) {
                 return enunciado.substring(0, 20) + "[*]";
+            } else {
+                return enunciado;
             }
         } else if (enunciado != null) {
             if (correcta == true) {

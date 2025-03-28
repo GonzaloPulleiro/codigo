@@ -7,12 +7,8 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
-import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 /**
  *
@@ -33,7 +29,10 @@ public class ExamenDAO {
 
         try (PreparedStatement ps = conexion.prepareStatement(consulta)) {
             ResultSet rs = ps.executeQuery();
-            lista.add(rs.getInt(1));
+            while(rs.next()){
+                lista.add(rs.getInt(1));
+
+            }
 
         } catch (SQLException ex) {
             System.err.println("Error en getExamenIds(): " + ex.getMessage());
@@ -48,10 +47,13 @@ public class ExamenDAO {
 //        try (PreparedStatement ps = conexion.prepareStatement(consulta)) {
 //            ps.setInt(1, idExamen);
 //            ResultSet rs = ps.executeQuery();
-//            LocalDateTime fecha = LocalDateTime.parse("fecha");
-//            exame = new Examen(rs.getInt("idExamen"),
-//                    rs.getString("descripcion"),
-////                    rs.getString(fecha));
+//            if(rs.next()){
+
+                //            LocalDateTime fecha = LocalDateTime.parse("fecha");
+                //            exame = new Examen(rs.getInt("idExamen"),
+                //                    rs.getString("descripcion"),
+                ////                    rs.getString(fecha));
+//            }
 //
 //        } catch (SQLException ex) {
 //            System.err.println("Error en getExamenById(): " + ex.getMessage());
